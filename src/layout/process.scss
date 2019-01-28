@@ -1,0 +1,37 @@
+.la-process {
+  // margin: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+
+  .la-process__content--main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+    background: steelblue;
+  }
+
+  .la-process__sub-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 300px 100px;
+    // margin: 100px;
+    background: powderblue;
+
+    .la-process__content--2 {
+      // position: absolute;
+      // top: 100px;
+      // right: 0;
+      // left: 0;
+      background: purple;
+    }
+
+    .la-process__content--3 {
+      position: absolute;
+      bottom: 20px;
+      right: 100px;
+      left: 100px;
+      background: palegreen;
+    }
+  }
+}

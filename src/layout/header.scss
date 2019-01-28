@@ -1,0 +1,26 @@
+.la-header {
+  height: 80vh;
+  display: flex;
+  background: peachpuff;
+
+  .la-header__content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: salmon;
+
+    h1 {
+      width: 50%;
+    }
+
+    p {
+      width: 50%;
+    }
+  }
+
+  .la-header__img {
+    // background: khaki;
+  }
+}

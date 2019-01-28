@@ -1,0 +1,18 @@
+$padding: 100px;
+
+/* ----- COLORS ----- */
+
+$color-text-primary: rgb(107, 105, 105);
+$color-text-secondary: rgb(175, 174, 174);
+$color-white: rgb(255, 255, 255);
+
+/* ----- BREAKPOINTS ----- */
+
+$break-xs: 320px;
+$break-sm: 700px;
+$break-md: 960px;
+$break-lg: 1140px;
+$break-xl: 1824px;
+
+// @media only screen and (min-width: $break-xs) and (max-width: $break-sm) {
+// @media (min-width: $break-xs) {

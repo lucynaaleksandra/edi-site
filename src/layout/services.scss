@@ -1,0 +1,19 @@
+.la-services {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    padding: 50px 100px;
+    background: salmon;
+  }
+
+  .la-services__four-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .la-services__block {
+      padding: 50px 100px;
+      background: palevioletred;
+    }
+  }
+}

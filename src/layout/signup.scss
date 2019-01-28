@@ -1,0 +1,19 @@
+.la-signup {
+  display: flex;
+  background: paleturquoise;
+
+  .la-signup__content {
+    width: 60%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    background: palegreen;
+  }
+
+  .la-signup__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

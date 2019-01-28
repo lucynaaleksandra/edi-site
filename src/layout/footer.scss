@@ -1,0 +1,48 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  background: plum;
+
+  .la-footer {
+    display: flex;
+
+    .la-footer__menu {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      // justify-content: center;
+      // padding: 60px 30px;
+      font-size: 20px;
+      background: peachpuff;
+
+      > a {
+        font-size: 15px;
+        background: palevioletred;
+      }
+    }
+  }
+
+  .la-footer__links {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    // background: purple;
+
+    .la-footer__social {
+      background: palegoldenrod;
+
+      a {
+        padding-right: 20px;
+      }
+    }
+
+    .la-footer__sublinks {
+      background: purple;
+
+      a {
+        padding-left: 50px;
+      }
+    }
+  }
+}
