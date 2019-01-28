@@ -2,12 +2,24 @@
   display: flex;
   background: paleturquoise;
 
+  @include responsive-xs {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .la-signup__content {
     width: 60%;
     padding: 100px;
     display: flex;
     flex-direction: column;
     background: palegreen;
+
+    @include responsive-xs {
+      width: 100%;
+      padding: 40px;
+      flex-direction: column;
+      flex-grow: 1;
+    }
   }
 
   .la-signup__btn {
@@ -15,5 +27,9 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+
+    @include responsive-xs {
+      padding: 20px;
+    }
   }
 }

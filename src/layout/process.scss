@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
 
+  @include responsive-xs {
+    flex-direction: column;
+  }
+
   .la-process__content--main {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,10 @@
     padding: 300px 100px;
     // margin: 100px;
     background: powderblue;
+
+    @include responsive-xs {
+      // padding: 40px;
+    }
 
     .la-process__content--2 {
       // position: absolute;

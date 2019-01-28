@@ -6,6 +6,12 @@ footer {
 
   .la-footer {
     display: flex;
+    background: blue;
+
+    @include responsive-xs {
+      flex-direction: column;
+      text-align: center;
+    }
 
     .la-footer__menu {
       display: flex;
@@ -20,6 +26,10 @@ footer {
         font-size: 15px;
         background: palevioletred;
       }
+
+      @include responsive-xs {
+        flex-direction: column;
+      }
     }
   }
 
@@ -27,7 +37,11 @@ footer {
     display: flex;
     align-items: center;
     padding-top: 40px;
-    // background: purple;
+
+    @include responsive-xs {
+      flex-direction: column;
+      text-align: center;
+    }
 
     .la-footer__social {
       background: palegoldenrod;
@@ -42,6 +56,12 @@ footer {
 
       a {
         padding-left: 50px;
+
+        @include responsive-xs {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+        }
       }
     }
   }

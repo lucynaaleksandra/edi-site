@@ -15,5 +15,9 @@
       padding: 50px 100px;
       background: palevioletred;
     }
+
+    @include responsive-xs {
+      display: block;
+    }
   }
 }
