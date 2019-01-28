@@ -17,17 +17,27 @@
     align-items: center;
     background: salmon;
 
+    @include responsive-sm {
+      width: 70%;
+    }
+
     @include responsive-xs {
       width: 100%;
+      text-align: center;
     }
 
-    h1 {
-      width: 50%;
-    }
-
+    h1,
     p {
       width: 50%;
+
+      @include responsive-sm {
+        width: 70%;
+      }
     }
+
+    // p {
+    //   width: 50%;
+    // }
   }
 
   .la-header__img {
