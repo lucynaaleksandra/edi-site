@@ -1,7 +1,7 @@
 .la-header {
   height: 80vh;
   display: flex;
-  background: peachpuff;
+  // background: peachpuff;
 
   @include responsive-xs {
     flex-direction: column;
@@ -10,25 +10,51 @@
   }
 
   .la-header__content {
-    width: 40%;
+    width: 100%;
+    padding: 100px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: salmon;
+    justify-content: flex-start;
 
-    @include responsive-sm {
-      width: 70%;
+    // .la-header__graphics {
+    // 	width: 100%;
+    // 	position: relative;
+
+    &:before {
+      content: "";
+      background-image: url("/asset/edi01.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -100px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
     }
 
-    @include responsive-xs {
-      width: 100%;
-      text-align: center;
-    }
+    // img {
+    // width: 100%;
+    // }
+
+    // @include responsive-lg {
+    //   width: 50%;
+    // }
+
+    // @include responsive-sm {
+    //   width: 40%;
+    // }
+
+    // @include responsive-xs {
+    //   width: 100%;
+    //   text-align: center;
+    // }
 
     h1,
     p {
-      width: 50%;
+      width: 30%;
 
       @include responsive-sm {
         width: 70%;
@@ -38,10 +64,16 @@
     // p {
     //   width: 50%;
     // }
+    button {
+      width: 10%;
+      // display: flex;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+    }
   }
 
-  .la-header__img {
-    // display: none;
-    // background: khaki;
-  }
+  // .la-header__img {
+  // display: none;
+  // background: khaki;
+  // }
 }

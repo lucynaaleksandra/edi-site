@@ -2,11 +2,9 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 100px;
-  background: plum;
 
   .la-footer {
     display: flex;
-    background: blue;
 
     @include responsive-xs {
       flex-direction: column;
@@ -20,17 +18,28 @@ footer {
       // justify-content: center;
       // padding: 60px 30px;
       font-size: 20px;
-      background: peachpuff;
 
-      > a {
-        font-size: 15px;
-        background: palevioletred;
+      h6 {
+        font-size: 18px;
+      }
+
+      a,
+      i {
+        font-size: 12px;
+
+        i {
+          color: $color-accent;
+        }
       }
 
       @include responsive-xs {
         flex-direction: column;
       }
     }
+  }
+
+  > div > .la-footer__menu:last-of-type {
+    width: 15%;
   }
 
   .la-footer__links {
@@ -44,18 +53,18 @@ footer {
     }
 
     .la-footer__social {
-      background: palegoldenrod;
+      padding-right: 30px;
 
-      a {
-        padding-right: 20px;
+      a i {
+        padding-right: 10px;
+        font-size: 20px;
       }
     }
 
     .la-footer__sublinks {
-      background: purple;
-
-      a {
-        padding-left: 50px;
+      a span {
+        padding-left: 30px;
+        font-size: 12px;
 
         @include responsive-xs {
           display: flex;
