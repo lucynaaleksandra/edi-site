@@ -3,17 +3,31 @@
   flex-direction: column;
 
   h2 {
-    padding: 50px 100px;
-    background: salmon;
+    padding: 50px 150px 0 150px;
+    font-size: 40px;
+    font-weight: 400;
+
+    @include responsive-sm {
+      padding: 50px 100px 0 120px;
+    }
   }
 
   .la-services__four-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 75px 100px;
 
     .la-services__block {
-      padding: 50px 100px;
-      background: palevioletred;
+      padding: 0 50px 50px 50px;
+
+      @include responsive-sm {
+        padding: 0 20px 20px 20px;
+      }
+
+      i {
+        font-size: 45px;
+        color: $color-accent;
+      }
     }
 
     @include responsive-xs {

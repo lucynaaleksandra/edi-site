@@ -41,13 +41,9 @@ h6 {
   font-weight: 600;
 }
 
-// p {
-//   font-size: 13px;
-// }
-
 a {
   text-decoration: none;
-  color: #333;
+  color: $color-text-primary;
   cursor: pointer;
   user-select: none;
 }
@@ -56,3 +52,51 @@ ul,
 li {
   list-style-type: none;
 }
+
+.la__button--primary {
+  padding: 13px 30px;
+  // background: linear-gradient(to bottom, #f1f2d0, #0492aa);
+  // border: 5px solid linear-gradient(to bottom, #f1f2d0, #0492aa);
+  border-radius: 35px;
+  color: $color-text-primary;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 400;
+    color: $color-text-secondary;
+    opacity: 0.9;
+  }
+}
+
+.la__button--secondary {
+  padding: 20px 60px;
+  // background: linear-gradient(to bottom, #f1f2d0, #0492aa);
+  // border: 5px solid linear-gradient(to bottom, #f1f2d0, #0492aa);
+  border-radius: 45px;
+  color: $color-text-primary;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 400;
+    // background: #f1f2d0;
+    color: $color-text-secondary;
+    opacity: 0.9;
+  }
+}
+
+// not compatible with border-radius:
+// .la__button {
+//   background: none;
+//   padding: 10px 20px;
+//   border-radius: 30px;
+// }
+
+// .border-gradient {
+//   border-image-slice: 1;
+//   border-width: 5px;
+// }
+// .border-gradient-green {
+//   border-image: linear-gradient(to bottom, #f1f2d0, #0492aa);
+// }

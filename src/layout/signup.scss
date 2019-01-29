@@ -1,9 +1,26 @@
+@import "../util/variables";
+
+hr {
+  margin: 0 100px;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid $color-text-secondary;
+  opacity: 0.5;
+}
+
 .la-signup {
   display: flex;
-  background: paleturquoise;
+
+  @include responsive-sm {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   @include responsive-xs {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
@@ -12,13 +29,26 @@
     padding: 100px;
     display: flex;
     flex-direction: column;
-    background: palegreen;
+
+    @include responsive-sm {
+      padding: 50px 50px 25px 50px;
+      text-align: center;
+    }
 
     @include responsive-xs {
       width: 100%;
       padding: 40px;
       flex-direction: column;
-      flex-grow: 1;
+      flex: 1;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+
+    @include responsive-xs {
+      font-size: 34px;
     }
   }
 
@@ -27,6 +57,11 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+
+    @include responsive-sm {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
 
     @include responsive-xs {
       padding: 20px;

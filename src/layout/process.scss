@@ -3,6 +3,27 @@
   display: flex;
   justify-content: space-between;
 
+  // width: 100%;
+  // padding: 100px;
+  // position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+
+  // &:before {
+  //   content: "";
+  //   background-image: url("/asset/edi03.png");
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -100px;
+  //   bottom: -200px;
+  //   right: 0;
+  //   left: 0;
+  //   z-index: -5;
+  // }
+
   @include responsive-xs {
     flex-direction: column;
   }
@@ -12,6 +33,11 @@
     flex-direction: column;
     padding: 30px 100px;
     background: steelblue;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 400;
+    }
   }
 
   .la-process__sub-content {
