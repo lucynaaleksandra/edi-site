@@ -53,13 +53,13 @@ li {
   list-style-type: none;
 }
 
-.la__button--primary {
+.la__btn--primary {
   padding: 13px 30px;
   // background: linear-gradient(to bottom, #f1f2d0, #0492aa);
-  // border: 5px solid linear-gradient(to bottom, #f1f2d0, #0492aa);
   border-radius: 35px;
   color: $color-text-primary;
   outline: none;
+  margin-left: 50px;
   cursor: pointer;
 
   &:hover {
@@ -69,7 +69,7 @@ li {
   }
 }
 
-.la__button--secondary {
+.la__btn--secondary {
   padding: 20px 60px;
   // background: linear-gradient(to bottom, #f1f2d0, #0492aa);
   // border: 5px solid linear-gradient(to bottom, #f1f2d0, #0492aa);
@@ -80,7 +80,6 @@ li {
 
   &:hover {
     font-weight: 400;
-    // background: #f1f2d0;
     color: $color-text-secondary;
     opacity: 0.9;
   }

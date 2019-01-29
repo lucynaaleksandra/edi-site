@@ -2,32 +2,21 @@
   height: 80vh;
   display: flex;
   position: relative;
-  // margin-bottom: 200px;
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: -100px;
-    top: -100vw;
-    right: -100px;
-    bottom: 100px;
-    z-index: -1;
-    transform: skewY(30deg);
-    transform-origin: 60%;
-    // background-repeat: no-repeat;
-    // clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2);
-  }
+  margin-bottom: 300px;
 
   &:before {
     content: "";
     background: $color-gradient;
     position: absolute;
-    top: -200px;
+    top: -400px;
     bottom: -100px;
-    right: 0;
-    left: 0;
+    left: -800px;
+    right: -800px;
+    transform: skewY(25deg);
+    transform-origin: 60%;
     z-index: -1;
+    // clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2);
   }
 
   @include responsive-xs {
@@ -42,16 +31,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-
-    // .la-header__graphics {
-    // 	width: 100%;
-    // 	position: relative;
 
     &:before {
       content: "";
-      background-image: url("/asset/01.png");
-      background-size: auto 100%;
+      background-image: url("/asset/01A.png");
+      background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       position: absolute;
@@ -59,7 +43,7 @@
       bottom: -100px;
       right: 0;
       left: 0;
-      z-index: 0;
+      z-index: -1;
     }
 
     // img {
@@ -79,21 +63,27 @@
     //   text-align: center;
     // }
 
-    h1,
-    p {
+    h1 {
       width: 30%;
+      font-size: 70px;
+      color: $color-white;
 
       @include responsive-sm {
         width: 70%;
       }
     }
 
-    h1 {
-      color: $color-white;
+    p {
+      margin: 50px 0 50px 50px;
+      width: 20%;
+      font-size: 14px;
+      font-weight: 400;
     }
 
-    button {
-      width: 10%;
+    .la__btn-wrapper {
+      .la__btn--primary {
+        width: 10%;
+      }
     }
   }
 }

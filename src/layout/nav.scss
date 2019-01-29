@@ -71,6 +71,7 @@ nav {
     @include responsive-xs {
       flex-direction: column;
       align-items: center;
+      margin-right: 0;
 
       > div {
         margin: 0;
