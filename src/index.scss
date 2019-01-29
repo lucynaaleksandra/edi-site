@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "./layout/index.scss";
 @import "./util/variables";
+@import "./util/keyframes";
 
 body {
   margin: 0;
@@ -44,8 +45,9 @@ h6 {
 a {
   text-decoration: none;
   color: $color-text-primary;
-  cursor: pointer;
   user-select: none;
+  cursor: pointer;
+  @include hover-scale-01;
 }
 
 ul,

@@ -1,10 +1,16 @@
-.la-services {
+.la-services
+// .la-animatable 
+ {
   // margin-top: 200px;
   display: flex;
   flex-direction: column;
 
+  // &.la-animatable--animate {
+  //   animation: up 3000ms $easeOutBack 800ms forwards;
+  // }
+
   h2 {
-    padding: 150px 150px 0 150px;
+    padding: 50px 0 0 150px;
     font-size: 40px;
     font-weight: 400;
 

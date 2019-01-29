@@ -40,7 +40,7 @@
       position: absolute;
       top: -200px;
       bottom: -100px;
-      right: 0;
+      right: -100px;
       left: 0;
       z-index: -1;
 
@@ -89,6 +89,7 @@
     .la__btn-wrapper {
       .la__btn--primary {
         width: 10%;
+        // @include hover-scale-01;
       }
     }
   }

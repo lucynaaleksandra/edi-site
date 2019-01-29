@@ -67,19 +67,30 @@ footer {
         padding: 6px;
         font-size: 20px;
       }
+
+      .fab {
+        @include hover-scale-01;
+      }
     }
 
     .la-footer__sublinks {
-      a span {
+      > a {
         padding-left: 30px;
         font-size: 12px;
+        @include hover-scale-01;
+      }
 
-        @include responsive-xs {
-          line-height: 2;
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-        }
+      .la-footer--hover {
+        padding-left: 30px;
+        font-size: 12px;
+        @include hover-scale-01;
+      }
+
+      @include responsive-xs {
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
       }
     }
   }

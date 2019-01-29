@@ -24,11 +24,17 @@ hr {
     text-align: center;
   }
 
-  .la-signup__content {
+  .la-signup__content
+	// .la-animatable 
+	 {
     width: 60%;
     padding: 100px;
     display: flex;
     flex-direction: column;
+
+    // &.la-animatable--animate {
+    //   animation: up 3000ms $easeOutBack 800ms forwards;
+    // }
 
     @include responsive-sm {
       padding: 50px 50px 25px 50px;
@@ -57,6 +63,10 @@ hr {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+
+    button {
+      @include hover-scale-01;
+    }
 
     @include responsive-sm {
       flex-direction: column;
