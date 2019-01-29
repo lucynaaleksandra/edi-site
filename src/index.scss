@@ -57,7 +57,6 @@ li {
 
 .la__btn--primary {
   padding: 13px 30px;
-  // background: linear-gradient(to bottom, #f1f2d0, #0492aa);
   border-radius: 35px;
   color: $color-text-primary;
   outline: none;
@@ -73,8 +72,6 @@ li {
 
 .la__btn--secondary {
   padding: 20px 60px;
-  // background: linear-gradient(to bottom, #f1f2d0, #0492aa);
-  // border: 5px solid linear-gradient(to bottom, #f1f2d0, #0492aa);
   border-radius: 45px;
   color: $color-text-primary;
   outline: none;
@@ -100,3 +97,5 @@ li {
 // .border-gradient-green {
 //   border-image: linear-gradient(to bottom, #f1f2d0, #0492aa);
 // }
+// background: linear-gradient(to bottom, #f1f2d0, #0492aa);
+// border: 5px solid linear-gradient(to bottom, #f1f2d0, #0492aa);
