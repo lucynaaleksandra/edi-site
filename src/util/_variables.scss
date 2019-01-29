@@ -10,18 +10,9 @@ $color-accent: #0492aa;
 $color-accent-green: #f1f2d0;
 $color-gradient: linear-gradient(
   0deg,
-  rgba(241, 242, 208, 1) 21%,
+  rgba(241, 242, 208, 1) 0%,
   rgba(4, 146, 170, 1) 100%
 );
-
-// old
-// linear-gradient(
-//   0deg,
-//   rgba(4, 146, 170, 1) 0%,
-//   rgba(241, 242, 208, 1) 81%
-// new
-// background: rgb(241,242,208);
-// background: linear-gradient(0deg, rgba(241,242,208,1) 21%, rgba(4,146,170,1) 100%);
 
 /* ----- BREAKPOINTS ----- */
 
