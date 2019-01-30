@@ -1,6 +1,6 @@
 @import "../util/_mixins";
 @import "../util/variables";
-@import "./util/keyframes";
+@import "./util/animations";
 
 nav {
   width: 100%;
@@ -16,6 +16,7 @@ nav {
 
   .la-nav__left-nav {
     display: flex;
+    animation: left-to-right 3000ms $easeOutCirc 300ms normal forwards;
 
     @include responsive-xs {
       flex-direction: column;
@@ -66,6 +67,7 @@ nav {
   .la-nav__right-nav {
     display: flex;
     margin-right: 50px;
+    animation: right-to-left 2000ms $easeOutCirc 300ms normal forwards;
 
     > div {
       margin-left: 30px;

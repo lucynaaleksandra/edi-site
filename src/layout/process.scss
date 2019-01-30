@@ -1,10 +1,12 @@
+@import "./util/animations";
+
 .la-process,
 .la-animatable {
   margin: 0;
   position: relative;
 
   &.la-animatable--animate {
-    animation: up 3000ms $easeOutBack 800ms forwards;
+    animation: fade-up 3000ms $easeOutBack 800ms forwards;
   }
 
   @include responsive-xs {
@@ -18,13 +20,9 @@
     padding: 0 100px;
     position: absolute;
     top: -200px;
-    // left: 0;
-    // bottom: 0;
-    // right: 0;
 
     @include responsive-xs {
       top: 0;
-      // margin-bottom: 300px;
     }
 
     h2 {

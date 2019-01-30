@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "./layout/index.scss";
 @import "./util/variables";
-@import "./util/keyframes";
+@import "./util/animations";
 
 body {
   margin: 0;
@@ -48,6 +48,7 @@ a {
   user-select: none;
   cursor: pointer;
   @include hover-scale-01;
+  transition: padding 500ms $easeOutCirc;
 }
 
 ul,
@@ -55,33 +56,27 @@ li {
   list-style-type: none;
 }
 
-.la__btn--primary {
-  padding: 15px 33px;
+.la__btn--primary,
+.la__btn--secondary {
   border-radius: 35px;
   color: $color-text-primary;
   outline: none;
   cursor: pointer;
-  @include hover-scale-01;
+  opacity: 0.9;
 
   &:hover {
-    font-weight: 400;
+    font-weight: 600;
     color: $color-text-secondary;
-    opacity: 0.9;
   }
+}
+
+.la__btn--primary {
+  padding: 15px 33px;
 }
 
 .la__btn--secondary {
   padding: 20px 60px;
-  border-radius: 45px;
-  color: $color-text-primary;
-  outline: none;
-  cursor: pointer;
-
-  &:hover {
-    font-weight: 400;
-    color: $color-text-secondary;
-    opacity: 0.9;
-  }
+  @include hover-scale-01;
 }
 
 // not compatible with border-radius:

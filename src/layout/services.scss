@@ -1,10 +1,12 @@
+@import "./util/animations";
+
 .la-services,
 .la-animatable {
   display: flex;
   flex-direction: column;
 
   &.la-animatable--animate {
-    animation: up 3000ms $easeOutBack 800ms forwards;
+    animation: fade-up 3000ms $easeOutBack 800ms forwards;
   }
 
   @include responsive-xs {

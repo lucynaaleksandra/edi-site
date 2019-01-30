@@ -76,7 +76,6 @@ footer {
       > a {
         padding-left: 30px;
         font-size: 12px;
-        @include hover-scale-01;
 
         @include responsive-xs {
           line-height: 1.5;
@@ -93,7 +92,6 @@ footer {
 
       .la-footer--hover {
         padding-left: 30px;
-        @include hover-scale-01;
 
         @include responsive-xs {
           padding: 0;
