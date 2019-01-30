@@ -56,12 +56,12 @@ li {
 }
 
 .la__btn--primary {
-  padding: 13px 30px;
+  padding: 15px 33px;
   border-radius: 35px;
   color: $color-text-primary;
   outline: none;
-  margin-left: 50px;
   cursor: pointer;
+  @include hover-scale-01;
 
   &:hover {
     font-weight: 400;

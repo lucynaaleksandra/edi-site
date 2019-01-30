@@ -52,7 +52,6 @@ footer {
 
     @include responsive-xs {
       flex-direction: column;
-      text-align: center;
     }
 
     .la-footer__social {
@@ -78,19 +77,27 @@ footer {
         padding-left: 30px;
         font-size: 12px;
         @include hover-scale-01;
+
+        @include responsive-xs {
+          line-height: 1.5;
+          display: flex;
+          padding: 0;
+        }
+
+        > span {
+          @include responsive-xs {
+            margin: 0 auto;
+          }
+        }
       }
 
       .la-footer--hover {
         padding-left: 30px;
-        font-size: 12px;
         @include hover-scale-01;
-      }
 
-      @include responsive-xs {
-        line-height: 2;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
+        @include responsive-xs {
+          padding: 0;
+        }
       }
     }
   }

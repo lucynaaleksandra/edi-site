@@ -49,15 +49,17 @@ nav {
     > .la-nav__link {
       margin-left: 30px;
       @include hover-scale-01;
+
+      @include responsive-sm {
+        font-size: 14px;
+      }
+      @include responsive-xs {
+        margin: 0;
+      }
     }
 
     @include responsive-xs {
       flex-direction: column;
-      align-items: center;
-
-      > div {
-        margin: 0;
-      }
     }
   }
 
@@ -67,18 +69,21 @@ nav {
 
     > div {
       margin-left: 30px;
-      @include hover-scale-01;
       cursor: pointer;
+      @include hover-scale-01;
+
+      @include responsive-sm {
+        font-size: 14px;
+      }
+      @include responsive-xs {
+        margin: 0;
+      }
     }
 
     @include responsive-xs {
       flex-direction: column;
       align-items: center;
-      margin-right: 0;
-
-      > div {
-        margin: 0;
-      }
+      margin: 0;
     }
   }
 }

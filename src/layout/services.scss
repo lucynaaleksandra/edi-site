@@ -1,16 +1,14 @@
-.la-services
-// .la-animatable 
- {
-  // margin-top: 200px;
+.la-services,
+.la-animatable {
   display: flex;
   flex-direction: column;
 
-  // &.la-animatable--animate {
-  //   animation: up 3000ms $easeOutBack 800ms forwards;
-  // }
+  &.la-animatable--animate {
+    animation: up 3000ms $easeOutBack 800ms forwards;
+  }
 
-  @include responsive-sm {
-    // margin-top: 400px;
+  @include responsive-xs {
+    margin-top: 50px;
   }
 
   h2 {
