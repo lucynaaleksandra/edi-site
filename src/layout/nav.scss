@@ -67,7 +67,7 @@ nav {
   .la-nav__right-nav {
     display: flex;
     margin-right: 50px;
-    animation: right-to-left 2000ms $easeOutCirc 300ms normal forwards;
+    animation: right-to-left 2000ms $easeOutCirc 600ms normal forwards;
 
     > div {
       margin-left: 30px;

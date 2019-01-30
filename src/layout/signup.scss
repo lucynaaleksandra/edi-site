@@ -25,7 +25,8 @@ hr {
     text-align: center;
   }
 
-  .la-signup__content {
+  .la-signup__content,
+  .la-animatable {
     width: 60%;
     padding: 100px;
 
@@ -40,20 +41,29 @@ hr {
       flex-direction: column;
       flex: 1;
     }
+
+    &.la-animatable--animate {
+      // animation: fade-up 3000ms $easeOutBack 800ms forwards;
+    }
   }
 
   h2 {
     font-size: 40px;
     font-weight: 400;
+    animation: fade-up 2000ms $easeOutCirc 700ms normal forwards;
 
     @include responsive-xs {
       font-size: 34px;
     }
   }
+  p {
+    animation: fade-up 2000ms $easeOutCirc 1000ms normal forwards;
+  }
 
   .la__btn--wrapper {
     display: flex;
     align-items: center;
+    animation: right-to-left 3000ms $easeOutCirc 1300ms normal forwards;
 
     @include responsive-sm {
       flex-direction: column;
