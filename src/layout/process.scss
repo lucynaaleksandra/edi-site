@@ -1,13 +1,8 @@
-@import "./util/animations";
-
-.la-process,
-.la-animatable {
+.la-process {
   margin: 0;
   position: relative;
 
-  &.la-animatable--animate {
-    animation: fade-up 3000ms $easeOutBack 800ms forwards;
-  }
+  // @include will-animate-y;
 
   @include responsive-xs {
     flex-direction: column;
@@ -54,6 +49,8 @@
     background-position: center;
     display: flex;
     flex-direction: row;
+
+    @include will-animate-y;
 
     @include responsive-xs {
       flex-direction: column;

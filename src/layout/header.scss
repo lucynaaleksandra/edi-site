@@ -7,6 +7,12 @@
   margin-bottom: 300px;
   padding: 70px 100px;
 
+  $animDelay: 1000ms;
+
+  @include responsive-sm {
+    padding: 70px 50px;
+  }
+
   &:before {
     content: "";
     background: $color-gradient;
@@ -33,17 +39,23 @@
 
     &:nth-child(1) {
       width: 45%;
-      // animation: enter-fade-up-1 3000ms $easeOutCirc 1000ms normal forwards;
+      opacity: 0;
+      animation: enter-fade-up-1 3000ms $easeOutCirc $animDelay normal forwards;
 
       @include responsive-xs {
         width: 100%;
         margin-bottom: 150px;
-        text-align: center;
       }
     }
 
     &:nth-child(2) {
       width: 55%;
+      opacity: 0;
+      animation: up 3000ms $easeOutCirc $animDelay normal forwards;
+
+      @include responsive-sm {
+        width: 35%;
+      }
 
       &:before {
         content: "";
@@ -77,7 +89,8 @@
   h1 {
     line-height: 1;
     color: $color-white;
-    animation: enter-fade-up-1 3000ms $easeOutCirc 1000ms normal forwards;
+    opacity: 0;
+    animation: enter-fade-up-1 3000ms $easeOutCirc $animDelay normal forwards;
 
     @include responsive-md {
       font-size: 50px;
@@ -94,8 +107,8 @@
     margin: 25px 180px 50px 0;
     font-size: 12px;
     font-weight: 400;
-    animation: fade-up 2000ms $easeOutCirc 1400ms normal forwards;
-    // animation: enter-fade-up-1 3000ms $easeOutCirc 1300ms normal forwards;
+    opacity: 0;
+    animation: fade-up 2000ms $easeOutCirc 1500ms normal forwards;
 
     @include responsive-xs {
       width: 100%;
@@ -103,7 +116,7 @@
   }
 
   button {
-    animation: fade-up 2000ms $easeOutCirc 1800ms normal forwards;
-    // animation: enter-fade-up-1 3000ms $easeOutCirc 1600ms normal forwards;
+    opacity: 0;
+    animation: fade-up 2000ms $easeOutCirc 2000ms normal forwards;
   }
 }

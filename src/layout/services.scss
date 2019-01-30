@@ -1,13 +1,10 @@
-@import "./util/animations";
-
-.la-services,
-.la-animatable {
+.la-services {
   display: flex;
   flex-direction: column;
 
-  &.la-animatable--animate {
-    animation: fade-up 3000ms $easeOutBack 800ms forwards;
-  }
+  // &.la-animatable--animate {
+  //   animation: fade-up 3000ms $easeOutBack 800ms forwards;
+  // }
 
   @include responsive-xs {
     margin-top: 50px;
@@ -27,6 +24,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 75px 100px;
+
+    @include will-animate-y;
 
     .la-services__block {
       padding: 0 50px 50px 50px;
