@@ -9,6 +9,10 @@
   //   animation: up 3000ms $easeOutBack 800ms forwards;
   // }
 
+  @include responsive-sm {
+    // margin-top: 400px;
+  }
+
   h2 {
     padding: 50px 0 0 150px;
     font-size: 40px;

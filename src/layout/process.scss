@@ -1,6 +1,5 @@
 .la-process,
 .la-animatable {
-  // margin: 0 50px;
   margin: 0;
 
   &.la-animatable--animate {
@@ -25,6 +24,15 @@
 
     p {
       font-size: 13px;
+
+      @include responsive-xs {
+        text-align: center;
+      }
+    }
+
+    @include responsive-xs {
+      align-items: center;
+      width: 70%;
     }
   }
 
@@ -37,9 +45,19 @@
     display: flex;
     flex-direction: row;
 
+    @include responsive-xs {
+      height: 70vh;
+      flex-direction: column;
+      // background-size: contain;
+    }
+
     .la-process__img {
       height: 100%;
       flex: 1 0 60%;
+
+      @include responsive-xs {
+        // flex: 1 0 80%;
+      }
     }
 
     .la-process__sub-content {
@@ -48,18 +66,7 @@
       flex-direction: column;
       align-items: center;
 
-      .la-process__sub--2 {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        p {
-          width: 50%;
-          font-size: 13px;
-        }
-      }
-
+      .la-process__sub--2,
       .la-process__sub--3 {
         flex: 1 1 auto;
         display: flex;
@@ -69,6 +76,11 @@
         p {
           width: 50%;
           font-size: 13px;
+        }
+
+        @include responsive-xs {
+          margin: 50px;
+          align-items: flex-end;
         }
       }
     }
