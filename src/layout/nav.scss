@@ -16,9 +16,8 @@ nav {
   }
 
   .la-nav__left-nav {
-    // padding: 10px;
-    // border-bottom: 1px solid grey;
     display: flex;
+    opacity: 0;
     animation: left-to-right 3000ms $easeOutCirc 300ms normal forwards;
 
     @include responsive-xs {
@@ -71,6 +70,7 @@ nav {
   .la-nav__right-nav {
     display: flex;
     margin-right: 50px;
+    opacity: 0;
     animation: right-to-left 2000ms $easeOutCirc 600ms normal forwards;
 
     > div {
